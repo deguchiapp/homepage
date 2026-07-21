@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<script src="top-button.js"></script>
+<script src="support-menu.js"></script>
+<style>
+body{margin:0;background:#f9f9f6;}
+@media (max-width:720px){.site-header{position:static !important;backdrop-filter:none !important;background:#f9f9f6 !important;}}
+a{color:#1b8a5a;text-decoration:none;}
+a:hover{color:#2d6a40;}
+input,textarea{font-family:'Zen Kaku Gothic New',sans-serif;}
+input:focus,textarea:focus{outline:2px solid #4caf78;outline-offset:0;}
+.hv1:hover,.hv2:hover,.hv3:hover,.hv4:hover,.hv5:hover,.hv6:hover{color:#1b8a5a;}
+</style>
+</head>
+<body>
+<section style="min-height:100vh;display:flex;flex-direction:column;font-family:'Zen Kaku Gothic New',sans-serif;color:#1a1a1a;background:#f9f9f6">
+
+<div class="site-header" style="border-bottom:1px solid #ece9e0;background:rgba(249,249,246,.92);position:sticky;top:0;z-index:10;backdrop-filter:blur(8px)">
+<div style="max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px 32px;gap:20px;flex-wrap:wrap">
+<a href="index.html" style="display:flex;align-items:center;gap:10px;color:#1a1a1a">
+<img src="favicon.svg" alt="DEGUCHI APPLI" width="30" height="30" style="border-radius:8px;box-shadow:0 2px 8px rgba(20,24,18,.12)">
+<span style="font:700 17px Outfit,sans-serif">DEGUCHI APPLI</span>
+</a>
+<nav style="display:flex;gap:22px;align-items:center;font:500 13px 'Zen Kaku Gothic New',sans-serif;flex-wrap:wrap">
+<a href="index.html" style="color:#6B7065" class="hv1">ホーム</a>
+<a href="n-back-trainer.html" style="color:#6B7065" class="hv2">アプリ</a>
+<a href="about.html" style="color:#6B7065" class="hv3">About</a>
+<support-menu></support-menu>
+</nav>
+</div>
+</div>
+
+<div style="max-width:680px;margin:0 auto;padding:72px 32px 100px;width:100%;box-sizing:border-box">
+<div style="font:600 11px Outfit,sans-serif;letter-spacing:.32em;color:#2d6a40">CONTACT</div>
+<h1 style="font:700 32px 'Zen Kaku Gothic New',sans-serif;margin:14px 0 0">お問い合わせ</h1>
+<p style="font:500 14px 'Zen Kaku Gothic New',sans-serif;color:#6B7065;line-height:2;margin:14px 0 0">不具合のご報告・ご要望など、お気軽にお送りください。よくあるご質問は<a href="faq.html">FAQ</a>にまとめています。</p>
+
+<div id="c-done" style="display:none;background:#ffffff;border:1px solid #ece9e0;border-radius:24px;padding:48px 40px;margin-top:36px;text-align:center">
+<div style="width:56px;height:56px;border-radius:50%;background:#1b8a5a;color:#ffffff;display:flex;align-items:center;justify-content:center;font:700 26px Outfit,sans-serif;margin:0 auto">✓</div>
+<div style="font:700 20px 'Zen Kaku Gothic New',sans-serif;margin-top:20px">送信しました</div>
+<div style="font:500 14px 'Zen Kaku Gothic New',sans-serif;color:#6B7065;line-height:2;margin-top:10px">お問い合わせありがとうございます。<br>返信が必要な内容は、記入いただいたメールアドレスへご連絡します。</div>
+<button id="c-reset" style="margin-top:24px;padding:12px 28px;border-radius:999px;background:#ffffff;border:1px solid #ece9e0;color:#555555;font:500 13px 'Zen Kaku Gothic New',sans-serif;cursor:pointer">続けて送信する</button>
+</div>
+
+<div id="c-form" style="background:#ffffff;border:1px solid #ece9e0;border-radius:24px;padding:36px 40px;margin-top:36px;display:flex;flex-direction:column;gap:26px">
+
+<div>
+<div style="font:700 14px 'Zen Kaku Gothic New',sans-serif">お問い合わせの種類</div>
+<div style="display:flex;gap:8px;margin-top:12px;flex-wrap:wrap">
+<button type="button" data-kind="不具合の報告" style="padding:10px 20px;border-radius:999px;font-family:'Zen Kaku Gothic New',sans-serif;font-size:13px;cursor:pointer">不具合の報告</button>
+<button type="button" data-kind="ご要望・アイデア" style="padding:10px 20px;border-radius:999px;font-family:'Zen Kaku Gothic New',sans-serif;font-size:13px;cursor:pointer">ご要望・アイデア</button>
+<button type="button" data-kind="その他" style="padding:10px 20px;border-radius:999px;font-family:'Zen Kaku Gothic New',sans-serif;font-size:13px;cursor:pointer">その他</button>
+</div>
+</div>
+
+<div>
+<div style="font:700 14px 'Zen Kaku Gothic New',sans-serif">返信用メールアドレス <span style="font:500 12px 'Zen Kaku Gothic New',sans-serif;color:#888888">（任意）</span></div>
+<input id="c-email" type="email" placeholder="you@example.com" style="width:100%;box-sizing:border-box;margin-top:12px;padding:14px 18px;border-radius:14px;border:1px solid #ece9e0;background:#f9f9f6;font-size:14px">
+</div>
+
+<div>
+<div style="font:700 14px 'Zen Kaku Gothic New',sans-serif">内容</div>
+<textarea id="c-body" rows="6" style="width:100%;box-sizing:border-box;margin-top:12px;padding:14px 18px;border-radius:14px;border:1px solid #ece9e0;background:#f9f9f6;font-size:14px;line-height:1.9;resize:vertical"></textarea>
+</div>
+
+<div id="c-notice" style="display:none;padding:14px 18px;border-radius:14px;background:#fdf1ee;border:1px solid #f0d5cd;color:#a81c08;font:500 13px 'Zen Kaku Gothic New',sans-serif;line-height:1.9"></div>
+
+<div>
+<button id="c-submit" style="width:100%;height:54px;border-radius:27px;background:#c8220a;border:none;color:#ffffff;font:700 15px 'Zen Kaku Gothic New',sans-serif;cursor:pointer" class="hv4">送信する</button>
+<div style="font:500 12px 'Zen Kaku Gothic New',sans-serif;color:#888888;line-height:1.9;margin-top:14px;text-align:center">送信いただいた内容は、お問い合わせ対応のためにのみ利用します<span style="display:inline-block">（<a href="privacy.html">プライバシーポリシー</a>）。</span></div>
+</div>
+
+</div>
+
+<div style="font:500 13px 'Zen Kaku Gothic New',sans-serif;color:#6B7065;line-height:2;margin-top:28px">メールでのご連絡は <span style="display:inline-block"><a href="mailto:support@deguchiappli.com">support@deguchiappli.com</a> へお願いします。</span></div>
+</div>
+
+<div style="border-top:1px solid #ece9e0;margin-top:auto">
+<div style="max-width:1100px;margin:0 auto;padding:34px 32px;display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between">
+<div style="display:flex;align-items:center;gap:10px">
+<img src="favicon.svg" alt="" width="24" height="24" style="border-radius:6px">
+<span style="font:700 14px Outfit,sans-serif">DEGUCHI APPLI</span>
+</div>
+<div style="display:flex;gap:20px;font:500 12px 'Zen Kaku Gothic New',sans-serif;flex-wrap:wrap">
+<a href="about.html" style="color:#6B7065" class="hv5">About</a>
+<a href="faq.html" style="color:#6B7065" class="hv1">FAQ</a>
+<a href="contact.html" style="color:#6B7065" class="hv2">お問い合わせ</a>
+<a href="privacy.html" style="color:#6B7065" class="hv3">プライバシーポリシー</a>
+<a href="release-notes.html" style="color:#6B7065" class="hv6">リリースノート</a>
+</div>
+<div style="font:500 12px Outfit,sans-serif;color:#888888">© 2024 DEGUCHI APPLI</div>
+</div>
+</div>
+
+<top-button></top-button>
+</section>
+<script>
+(function(){
+  // ▼ 要設定: Googleフォーム連携 ─────────────────────────
+  // 1. Googleフォームを作成（質問3つ: 種類 / メール / 内容）
+  // 2. フォームURLの /viewform を /formResponse に変えて FORM_ACTION へ
+  // 3. 各質問の entry.XXXXXX を ENTRY へ（フォームのプレビューHTMLソースで確認できます）
+  var FORM_ACTION = 'https://docs.google.com/forms/d/e/1FAIpQLSclejWEQgmMs-2Z10usrKNfkuvUo-nYF0dI_vTxfChUHZSFkg/formResponse';
+  var ENTRY = { kind: 'entry.312142833', email: 'entry.445827466', body: 'entry.2052563581' };
+  // ─────────────────────────────────────────────
+
+  var placeholders = {
+    '不具合の報告': '機種・OS・発生した操作などもあわせてご記入ください。',
+    'ご要望・アイデア': 'こんな機能があったら嬉しい、改善してほしい点などをご記入ください。',
+    'その他': 'お気軽にご記入ください。'
+  };
+  var state = { kind: '不具合の報告' };
+  var kindBtns = document.querySelectorAll('[data-kind]');
+  var emailInput = document.getElementById('c-email');
+  var bodyInput = document.getElementById('c-body');
+  var noticeEl = document.getElementById('c-notice');
+  var formCard = document.getElementById('c-form');
+  var doneCard = document.getElementById('c-done');
+  var submitBtn = document.getElementById('c-submit');
+  var resetBtn = document.getElementById('c-reset');
+
+  function selectKind(k) {
+    state.kind = k;
+    kindBtns.forEach(function (btn) {
+      var sel = btn.getAttribute('data-kind') === k;
+      btn.style.background = sel ? '#1b8a5a' : '#ffffff';
+      btn.style.color = sel ? '#ffffff' : '#888888';
+      btn.style.border = sel ? '1px solid #1b8a5a' : '1px solid #ece9e0';
+      btn.style.fontWeight = sel ? '700' : '500';
+    });
+    bodyInput.setAttribute('placeholder', placeholders[k]);
+  }
+  kindBtns.forEach(function (btn) {
+    btn.addEventListener('click', function () { selectKind(btn.getAttribute('data-kind')); });
+  });
+
+  function showNotice(msg) {
+    noticeEl.textContent = msg;
+    noticeEl.style.display = msg ? 'block' : 'none';
+  }
+
+  submitBtn.addEventListener('click', async function () {
+    var body = bodyInput.value;
+    if (!body.trim()) { showNotice('内容をご記入ください。'); return; }
+    if (!FORM_ACTION) { showNotice('送信先フォームが未設定です。恐れ入りますが support@deguchiappli.com へ直接お送りください。'); return; }
+    var fd = new FormData();
+    fd.append(ENTRY.kind, state.kind);
+    fd.append(ENTRY.email, emailInput.value);
+    fd.append(ENTRY.body, body);
+    try {
+      await fetch(FORM_ACTION, { method: 'POST', mode: 'no-cors', body: fd });
+      showNotice('');
+      formCard.style.display = 'none';
+      doneCard.style.display = 'block';
+    } catch (err) {
+      showNotice('送信に失敗しました。時間をおいてお試しください。');
+    }
+  });
+
+  resetBtn.addEventListener('click', function () {
+    bodyInput.value = '';
+    showNotice('');
+    doneCard.style.display = 'none';
+    formCard.style.display = 'flex';
+  });
+
+  selectKind(state.kind);
+})();
+</script>
+</body>
+</html>

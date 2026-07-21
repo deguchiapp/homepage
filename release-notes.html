@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<script src="top-button.js"></script>
+<script src="support-menu.js"></script>
+<style>
+body{margin:0;background:#f9f9f6;}
+@media (max-width:720px){.site-header{position:static !important;backdrop-filter:none !important;background:#f9f9f6 !important;}}
+a{color:#1b8a5a;text-decoration:none;}
+a:hover{color:#2d6a40;}
+.hv1:hover{color:#1b8a5a}
+.hv2:hover{color:#1b8a5a}
+.hv3:hover{color:#1b8a5a}
+.hv4:hover{color:#1b8a5a}
+.hv5:hover{color:#1b8a5a}
+.hv6:hover{color:#1b8a5a}
+.hv7:hover{color:#1b8a5a}
+.hv8:hover{color:#1b8a5a}
+</style>
+</head>
+<body>
+<section style="min-height:100vh;display:flex;flex-direction:column;font-family:'Zen Kaku Gothic New',sans-serif;color:#1a1a1a;background:#f9f9f6">
+
+<div data-screen-label="ヘッダー" class="site-header" style="border-bottom:1px solid #ece9e0;background:rgba(249,249,246,.92);position:sticky;top:0;z-index:10;backdrop-filter:blur(8px)">
+<div style="max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px 32px;gap:20px;flex-wrap:wrap">
+<a href="index.html" style="display:flex;align-items:center;gap:10px;color:#1a1a1a">
+<img src="favicon.svg" alt="DEGUCHI APPLI" width="30" height="30" style="border-radius:8px;box-shadow:0 2px 8px rgba(20,24,18,.12)">
+<span style="font:700 17px Outfit,sans-serif">DEGUCHI APPLI</span>
+</a>
+<nav style="display:flex;gap:22px;align-items:center;font:500 13px 'Zen Kaku Gothic New',sans-serif;flex-wrap:wrap">
+<a href="index.html" style="color:#6B7065" class="hv1">ホーム</a>
+<a href="n-back-trainer.html" style="color:#6B7065" class="hv2">アプリ</a>
+<a href="about.html" style="color:#6B7065" class="hv3">About</a>
+<support-menu></support-menu>
+</nav>
+</div>
+</div>
+
+<div data-screen-label="リリースノート" style="max-width:760px;margin:0 auto;padding:72px 32px 100px;width:100%;box-sizing:border-box">
+<div style="font:600 11px Outfit,sans-serif;letter-spacing:.32em;color:#2d6a40">RELEASE NOTES</div>
+<h1 style="font:700 32px 'Zen Kaku Gothic New',sans-serif;margin:14px 0 0">リリースノート</h1>
+<p style="font:500 14px 'Zen Kaku Gothic New',sans-serif;color:#6B7065;line-height:2;margin:14px 0 0">「脳トレ N-Back」の更新履歴です。</p>
+
+<div style="display:flex;flex-direction:column;gap:14px;margin-top:40px">
+
+<div style="background:#ffffff;border:1px solid #ece9e0;border-radius:20px;padding:26px 30px;display:flex;gap:20px;align-items:flex-start">
+<span style="flex:none;padding:6px 14px;border-radius:999px;background:#1b8a5a;color:#ffffff;font:700 13px Outfit,sans-serif">v1.0.0</span>
+<div style="flex:1">
+<div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap">
+<span style="font:700 16px 'Zen Kaku Gothic New',sans-serif">初回リリース</span>
+<span style="font:500 12px Outfit,sans-serif;color:#888888">準備中</span>
+</div>
+<div style="font:500 14px 'Zen Kaku Gothic New',sans-serif;color:#555555;line-height:2;margin-top:8px">App Store / Google Play で公開予定です。公開後、更新内容をこのページに掲載します。</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div data-screen-label="フッター" style="border-top:1px solid #ece9e0;margin-top:auto">
+<div style="max-width:1100px;margin:0 auto;padding:34px 32px;display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between">
+<div style="display:flex;align-items:center;gap:10px">
+<img src="favicon.svg" alt="" width="24" height="24" style="border-radius:6px">
+<span style="font:700 14px Outfit,sans-serif">DEGUCHI APPLI</span>
+</div>
+<div style="display:flex;gap:20px;font:500 12px 'Zen Kaku Gothic New',sans-serif;flex-wrap:wrap">
+<a href="about.html" style="color:#6B7065" class="hv4">About</a>
+<a href="faq.html" style="color:#6B7065" class="hv5">FAQ</a>
+<a href="contact.html" style="color:#6B7065" class="hv6">お問い合わせ</a>
+<a href="privacy.html" style="color:#6B7065" class="hv7">プライバシーポリシー</a>
+<a href="release-notes.html" style="color:#6B7065" class="hv8">リリースノート</a>
+</div>
+<div style="font:500 12px Outfit,sans-serif;color:#888888">© 2024 DEGUCHI APPLI</div>
+</div>
+</div>
+
+<top-button></top-button>
+</section>
+</body>
+</html>
