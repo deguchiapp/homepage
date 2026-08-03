@@ -3,6 +3,7 @@
     ['faq.html', 'FAQ'],
     ['contact.html', 'お問い合わせ'],
     ['privacy.html', 'プライバシーポリシー'],
+    ['terms.html', '利用規約'],
     ['release-notes.html', 'リリースノート']
   ];
 
