@@ -4,6 +4,7 @@
     ['contact.html', 'お問い合わせ'],
     ['privacy.html', 'プライバシーポリシー'],
     ['terms.html', '利用規約'],
+    ['tokushoho.html', '特定商取引法に基づく表記'],
     ['release-notes.html', 'リリースノート']
   ];
 
